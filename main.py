@@ -26,7 +26,7 @@ class WeightTracker(QMainWindow):
         self.date_input.setCalendarPopup(True)  # Enable calendar popup
         self.date_input.setDate(QDate.currentDate())  # Set default to current date
         self.weight_input = QLineEdit()
-        self.weight_input.setPlaceholderText("Weight in kg")
+        self.weight_input.setPlaceholderText("Weight")  # Changed from "Weight in kg"
         add_button = QPushButton("Add Entry")
         add_button.clicked.connect(self.add_entry)
         
@@ -138,7 +138,7 @@ class WeightTracker(QMainWindow):
         sorted_data = self.data.sort_values('date', ascending=(sort_order == "Ascending"))
         
         for _, row in sorted_data.iterrows():
-            self.weight_list.addItem(f"{row['date'].strftime('%Y-%m-%d')}: {row['weight']} kg")
+            self.weight_list.addItem(f"{row['date'].strftime('%Y-%m-%d')}: {row['weight']}")  # Removed " kg"
 
     def update_chart(self):
         self.figure.clear()
