@@ -15,7 +15,7 @@ A simple desktop application for tracking and visualizing weight over time.
 
 1. Clone this repository:
    ```
-   git clone https://github.com/iamsoup101/weight-track
+   git clone git@github.com:iamsoup101/weight-track.git
    cd weight-track
    ```
 
