@@ -42,11 +42,7 @@ python main.py
 
 ## License
 
-This project is released into the public domain under The Unlicense. See the license.txt cfile for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+This project is released into the public domain under The Unlicense. See the license.txt file for details.
 
 ## Support
 
